@@ -65,6 +65,7 @@ class AppTextStyles {
     fontSize: 16,
     fontWeight: FontWeight.bold,
     color: AppColors.black,
+    height: 0,
   );
 
   /* Promo card */
