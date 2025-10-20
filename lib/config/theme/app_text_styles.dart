@@ -8,7 +8,6 @@ class AppTextStyles {
     fontSize: 13,
     fontWeight: FontWeight.bold,
     color: AppColors.black,
-    height: 2.3,
   );
 
   static final searchInputHint = GoogleFonts.inter(
@@ -68,7 +67,7 @@ class AppTextStyles {
     height: 0,
   );
 
-  /* Promo card */
+  /* Promo banner */
   static final mainPromoCardTitle = GoogleFonts.poppins(
     fontSize: 48,
     fontWeight: FontWeight.bold,
@@ -79,7 +78,7 @@ class AppTextStyles {
   static final mainPromoCardDescription = GoogleFonts.inter(
     fontSize: 16,
     fontWeight: FontWeight.bold,
-    color: AppColors.primary,
+    color: AppColors.black,
     height: 1.5,
   );
 
@@ -88,5 +87,13 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.white,
     height: 2.3,
+  );
+
+  /* Category banner */
+  static final categoryBannerTitle = GoogleFonts.inter(
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+    color: AppColors.black,
+    height: 0.4,
   );
 }
