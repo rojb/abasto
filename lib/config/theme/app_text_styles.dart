@@ -133,4 +133,27 @@ class AppTextStyles {
     color: AppColors.grey700,
     height: 1.25,
   );
+
+  /* Secondary product banner */
+  static final secondaryBannerTitle = GoogleFonts.inter(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: AppColors.black,
+    height: 1,
+  );
+
+  static final secondaryBannerDescription = GoogleFonts.inter(
+    fontSize: 13,
+    fontWeight: FontWeight.normal,
+    color: AppColors.black,
+    height: 1.84,
+  );
+
+  static final secondaryBannerButton = GoogleFonts.inter(
+    fontSize: 11,
+    fontWeight: FontWeight.w600,
+    color: AppColors.white,
+    height: 2.36,
+    letterSpacing: 0,
+  );
 }

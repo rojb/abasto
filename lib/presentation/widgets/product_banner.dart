@@ -2,11 +2,11 @@ import 'package:abasto/config/theme/app_colors.dart';
 import 'package:abasto/config/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
-class SecondaryProductBanner extends StatelessWidget {
+class ProductBanner extends StatelessWidget {
   final String title;
   final String description;
   final String imageUrl;
-  const SecondaryProductBanner({
+  const ProductBanner({
     super.key,
     required this.title,
     required this.description,
@@ -18,14 +18,14 @@ class SecondaryProductBanner extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(8),
       child: SizedBox(
-        height: 193,
-        width: 301,
+        height: 143,
+        width: double.infinity,
         child: Stack(
           children: [
             Positioned.fill(child: Image.asset(imageUrl, fit: BoxFit.cover)),
             Positioned(
-              top: 52,
-              right: 42,
+              top: 27,
+              right: 45,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [

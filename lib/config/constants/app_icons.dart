@@ -9,4 +9,5 @@ class AppIcons {
   static const String veggies = 'assets/icons/veggies-icon.svg';
   static const String eggs = 'assets/icons/eggs-icon.svg';
   static const String flour = 'assets/icons/flour-icon.svg';
+  static const String confirmWatermelon = 'assets/icons/confirm-icon.svg';
 }

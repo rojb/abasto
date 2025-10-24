@@ -37,11 +37,15 @@ class CustomAppBar extends StatelessWidget {
             Row(
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(context, '/notifications');
+                  },
                   icon: SvgPicture.asset(AppIcons.notification),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(context, '/cart');
+                  },
                   icon: SvgPicture.asset(AppIcons.cart),
                 ),
               ],

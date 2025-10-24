@@ -1,15 +1,26 @@
+import 'package:abasto/presentation/widgets/shared/custom_bottom_navbar.dart';
 import 'package:flutter/material.dart';
 
 import '../../config/constants/app_images.dart';
+import '../../config/helpers/navigation.dart';
 import '../../config/theme/app_colors.dart';
 import '../../infrastructure/models/product_model.dart';
 import '../../presentation/widgets/category_banner_list.dart';
+import '../widgets/product_banner_list.dart';
 import '../widgets/products_carrousel.dart';
 import '../../presentation/widgets/shared/custom_app_bar.dart';
 import '../../presentation/widgets/product_section.dart';
+import '../widgets/secondary_product_banner_list.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -68,9 +79,28 @@ class HomePage extends StatelessWidget {
                   products: bestSellingProducts,
                 ),
               ),
+              Padding(
+                padding: EdgeInsetsGeometry.only(left: 16),
+                child: SecondaryProductBannerList(),
+              ),
+              Padding(
+                padding: EdgeInsetsGeometry.only(left: 16),
+                child: ProductSection(
+                  title: 'Exclusivos',
+                  products: bestSellingProducts,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsGeometry.only(left: 16),
+                child: ProductBannerList(),
+              ),
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: CustomBottomNavBar(
+        currentIndex: _selectedIndex,
+        onTap: (index) => onBottomNavItemTapped(context, index, _selectedIndex),
       ),
     );
   }
